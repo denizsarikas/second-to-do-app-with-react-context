@@ -11,7 +11,6 @@ const TodoList = () => {
         {todoList.map((todo, index) => (
           <li key={index}>
             {todo}
-
             <button onClick={() => removeTodo(index)}>x</button>
           </li>
         ))}

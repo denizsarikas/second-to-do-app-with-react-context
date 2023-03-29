@@ -3,7 +3,7 @@ import { useTodoContext } from '../providers/TodoProvider'
 
 const TodoForm = () => {
 
-    const { todoList, getNumberOfTodoItems, addTodo} = useTodoContext();
+    const { getNumberOfTodoItems, addTodo} = useTodoContext();
 
     const [todoItem, setTodoItem] = useState("")
 
@@ -12,9 +12,6 @@ const TodoForm = () => {
        // console.log("new todo " + todoItem)
        addTodo(todoItem)
        setTodoItem("")
-
-
-      
     }
 
   return (
